@@ -10,8 +10,8 @@ adc = machine.ADC(28)
 
 blink_period = 0.1
 
-max_bright = 20000
-min_bright = 10000
+max_bright = 45195
+min_bright = 256
 
 while True:
     value = adc.read_u16()
