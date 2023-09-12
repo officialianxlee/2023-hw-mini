@@ -97,8 +97,6 @@ print(f"You missed the light {misses} / {N} times")
 
 t_good = [x for x in t if x is not None]
 
-print(t_good)
-
 # Calculate and print the average, min, max response time
 if t_good:
     avg_response_time = sum(t_good) / len(t_good)
@@ -114,12 +112,13 @@ print(f"Maximum response time: {max_response_time} ms")
 # Write results to JSON file
 results = {
     "response_times": t,
-    "misses": misses,
+    "score": str(misses)+ "/" +str(N) + " flashes",
     "average_response_time": avg_response_time,
     "min_response_time": min_response_time,
     "max_response_time": max_response_time,
 }
 
 with open('project01results.json', 'w') as file:
-    json.dump(results, file, indent=4)
+    json.dump(results, file)
 
+print(t_good)
