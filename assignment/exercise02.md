@@ -29,12 +29,19 @@ For future reference (not necessary for this specific exercise): to download a f
 
 Why do you think we would use a file (e.g. JSON file) for parameter storage instead of accepting the parameters as user `input()`, especially on an embedded system?
 
+Answer: Embedded systems won't always have the inputs required to accept user parameters
+
 ### Question 02
 
 Why might we prefer to use a JSON file to store parameters instead of hard-coding values in the Python script?
+
+Answer: JSON files are far more readable and easy to edit compared to parameters buried within a Python script
 
 ### Question 03
 
 Why didn't the exercise02.py code use
 [os.path.isfile](https://docs.python.org/3/library/os.path.html#os.path.isfile),
 that is, why did I write the "is_regular_file()" function?
+
+Answer: 
+
