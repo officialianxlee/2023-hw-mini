@@ -29,13 +29,13 @@ To download a file that you've edited on the Pico back to your computer to uploa
 
 Why do you think we would use a file (e.g. JSON file) for parameter storage instead of accepting the parameters as user `input()`, especially on an embedded system?
 
-Answer: Embedded systems don't always have the inputs required to accept user parameters
+Answer: We use a file for parameter storage instead of accepting the parameters as user 'input(); especially in embedded systems because files allow for consistency and reusability, security such as storing API keys, flexibility, ease of maintenance if certain parameters need to be updated, performance since embedded systems often have startup configurations that are read from a file during boot time, testing, and user experience.
 
 ### Question 02
 
 Why might we prefer to use a JSON file to store parameters instead of hard-coding values in the Python script?
 
-Answer: JSON files are far more readable and easy to edit compared to parameters buried in a Python script
+Answer: We prefer to use a JSON file to store parameters instead of hard-coding values in the Python script for code organization, cleaner code, and security issues when dealing with sensitive data.
 
 ### Question 03
 
@@ -43,5 +43,5 @@ Why didn't the exercise02.py code use
 [os.path.isfile](https://docs.python.org/3/library/os.path.html#os.path.isfile),
 that is, why did I write the "is_regular_file()" function?
 
-Answer: 
+Answer: The is_regular_file() function was created to provide a way to check if a file is a regular file that works in both MicroPython and standard Python environments, allowing for code that is portable between these two environments since the "os.path.isfile()" method does not exist in the MicroPython environment. This function leverages the available functionalities in each environment to perform the file check, ensuring the script can run correctly regardless of the Python environment it is executed in.
 
