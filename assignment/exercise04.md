@@ -14,8 +14,8 @@ Let's calibrate the light sensor to be meaningful.
 If you don't want to put a light calibration app on your phone that's fine.
 Instead we could experiment to find the max_bright and min_bright values that:
 
-* max_bright: make the LED duty cycle about 100% when in bright light (sunlight, room light)
-* min_bright: make the LED duty cycle about 0% when in very dim light (dark room, covered with hand)
+* max_bright: make the LED duty cycle about 100% when in bright light (sunlight, room light) 45195
+* min_bright: make the LED duty cycle about 0% when in very dim light (dark room, covered with hand) 256
 
 Please put these values in the exercise04.json file and read them with your own version of exercise04.py.
 This exercise04.json and exercise04.py should be in your own Git repo, and are the "answers" for Exercise 04.
