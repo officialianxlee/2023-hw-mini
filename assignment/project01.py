@@ -112,7 +112,7 @@ print(f"Maximum response time: {max_response_time} ms")
 # Write results to JSON file
 results = {
     "response_times": t,
-    "score": str(misses)+ "/" +str(N) + " flashes",
+    "score": str(N - misses)+ "/" +str(N) + " flashes",
     "average_response_time": avg_response_time,
     "min_response_time": min_response_time,
     "max_response_time": max_response_time,
